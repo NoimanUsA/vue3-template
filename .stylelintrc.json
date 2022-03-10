@@ -1,7 +1,17 @@
 {
   "extends": [
     "stylelint-config-standard-scss",
-    "stylelint-config-prettier-scss",
-    "stylelint-config-rational-order"
-  ]
+    "stylelint-config-rational-order",
+    "stylelint-config-recommended-vue/scss",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "plugin/rational-order": [
+      true,
+      {
+        "empty-line-between-groups": true
+      }
+    ],
+    "declaration-empty-line-before": null
+  }
 }

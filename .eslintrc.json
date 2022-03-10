@@ -1,7 +1,6 @@
 {
   "root": true,
   "plugins": [
-    "@typescript-eslint",
     "prettier"
   ],
   "extends": [
@@ -19,7 +18,10 @@
   "parser": "vue-eslint-parser",
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [
+      ".vue"
+    ]
   },
   "rules": {
     "prettier/prettier": [
@@ -28,6 +30,13 @@
       {
         "usePrettierrc": true
       }
+    ],
+    "import/extensions": [
+      ".js",
+      ".ts",
+      ".vue",
+      ".tsx",
+      ".jsx"
     ]
   }
 }
