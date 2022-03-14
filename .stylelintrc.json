@@ -5,6 +5,11 @@
     "stylelint-config-recommended-vue/scss",
     "stylelint-config-prettier"
   ],
+  "ignoreFiles": [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.html"
+  ],
   "rules": {
     "plugin/rational-order": [
       true,
@@ -12,6 +17,7 @@
         "empty-line-between-groups": true
       }
     ],
-    "declaration-empty-line-before": null
+    "declaration-empty-line-before": null,
+    "rule-empty-line-before": "always"
   }
 }
