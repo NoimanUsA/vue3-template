@@ -18,5 +18,4 @@ export default {
   stats: {
     errorDetails: true
   },
-  devtool: 'source-map',
 } as Configuration;

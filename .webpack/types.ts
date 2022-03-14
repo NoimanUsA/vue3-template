@@ -6,6 +6,3 @@ export interface Env {
   WEBPACK_BUILD?: string,
   WEBPACK_SERVE?: string,
 }
-export interface Args {
-  mode?: string
-}

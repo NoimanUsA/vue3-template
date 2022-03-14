@@ -40,7 +40,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/**/*.js",
-    "src/**/*.jsx"
+    "src/**/*.jsx",
+    "./webpack.config.ts",
   ],
   "exclude": [
     "node_modules"

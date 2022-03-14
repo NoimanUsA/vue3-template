@@ -2,6 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import StyleLintPlugin from 'stylelint-webpack-plugin';
 import { VueLoaderPlugin } from 'vue-loader';
 import * as path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
 
 // modules
 import vueRules from './modules/vue';
@@ -14,8 +15,12 @@ import { MergedConfigs as Configuration } from './types';
 export default {
   entry: './src/index.ts',
   output: {
+    clean: true,
     path: path.resolve(__dirname, '../dist'),
-    filename: 'bundle.js',
+    filename: '[name].[contenthash].bundle.js',
+    chunkFilename: '[id].[contenthash][ext]',
+    asyncChunks: true,
+    hashDigestLength: 7,
   },
   resolve: {
     extensions: ['.ts', '.js', '.json', '.vue', '.tsx', '.jsx'],
@@ -24,7 +29,26 @@ export default {
     }
   },
   optimization: {
-    chunkIds: 'named'
+    chunkIds: 'named',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        minify: TerserPlugin.swcMinify,
+        terserOptions: {
+          compress: true,
+        },
+        parallel: true,
+      })
+    ]
   },
   module: {
     rules: [
@@ -45,4 +69,5 @@ export default {
       files: ['**/*.{vue,css,scss,sass}'],
     }),
   ],
+  devtool: 'source-map'
 } as Configuration;

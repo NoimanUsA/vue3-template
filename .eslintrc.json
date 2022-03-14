@@ -32,11 +32,14 @@
       }
     ],
     "import/extensions": [
-      ".js",
-      ".ts",
-      ".vue",
-      ".tsx",
-      ".jsx"
+      "error",
+      {
+        "js": "never",
+        "ts": "never",
+        "vue": "always",
+        "tsx": "never",
+        "jsx": "never"
+      }
     ]
   }
 }
