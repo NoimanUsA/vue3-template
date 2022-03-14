@@ -8,7 +8,8 @@ export default {
     static: '../dist',
     port: 1337,
     compress: true,
-    hot: true
+    hot: true,
+    liveReload: false
   },
   module: {
     rules: [
