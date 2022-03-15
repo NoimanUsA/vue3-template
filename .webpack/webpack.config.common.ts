@@ -18,7 +18,7 @@ export default {
     clean: true,
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].[contenthash].bundle.js',
-    chunkFilename: '[id].[contenthash][ext]',
+    chunkFilename: '[id].[contenthash].js',
     asyncChunks: true,
     hashDigestLength: 7,
   },
