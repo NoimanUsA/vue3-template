@@ -1,13 +1,10 @@
-import Vue from "vue";
-import VueCompositionApi from "@vue/composition-api";
+import { createApp } from "vue";
 import App from "@/App.vue";
 import store from "@/store";
 import router from "@/router";
 
-Vue.use(VueCompositionApi);
+const app = createApp(App);
+app.use(store);
+app.use(router);
 
-new Vue({
-  store,
-  router,
-  render: (h) => h(App),
-}).$mount("#app");
+app.mount("#app");

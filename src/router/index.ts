@@ -1,12 +1,7 @@
-import VueRouter from "vue-router";
-import Vue from "vue";
+import { createRouter, createMemoryHistory } from "vue-router";
 import routes from "./routes";
 
-Vue.use(VueRouter);
-
-const router = new VueRouter({
-  mode: "history",
+export default createRouter({
+  history: createMemoryHistory(),
   routes,
 });
-
-export default router;

@@ -7,7 +7,7 @@ git clone http://gitlab.nordclan/frontendspb/webpack/vue-2-app.git
 npm install
 
 // Установка прекоммитов
-npx husky install
+npm run prepare
 ```
 
 ## Команды
@@ -28,7 +28,7 @@ npx eslint ./src --fix
 ```
 ## Инструменты
 
-1. Framework: Vue.js 2 (+ Vuex, Vue Router),
+1. Framework: Vue.js 3 (+ Vuex, Vue Router),
 2. Linters: ESLint (+ Prettier), Stylelint, Husky.
 3. Compilers: Babel, TypeScript.
 4. CSS-preprocessor: SCSS.

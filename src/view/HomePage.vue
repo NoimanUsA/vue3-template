@@ -9,8 +9,8 @@
 </template>
 
 <script lang="ts">
+import { defineComponent, ref } from "vue";
 import BaseButton from "@/components/BaseButton.vue";
-import { defineComponent, ref } from "@vue/composition-api";
 
 export default defineComponent({
   name: "HomePage",
@@ -38,5 +38,10 @@ export default defineComponent({
 .home-page {
   display: grid;
   place-items: center;
+
+  &__buttons {
+    display: flex;
+    gap: 5px;
+  }
 }
 </style>

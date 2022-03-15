@@ -1,7 +1,4 @@
-import Vue from "vue";
-import Vuex from "vuex";
-
-Vue.use(Vuex);
+import { createStore } from "vuex";
 
 const store = {
   state: {},
@@ -11,4 +8,4 @@ const store = {
   modules: {},
 };
 
-export default new Vuex.Store(store);
+export default createStore(store);
