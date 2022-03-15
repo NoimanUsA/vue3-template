@@ -4,9 +4,11 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 const store = {
-  state: {
-    count: 0,
-  },
+  state: {},
+  getters: {},
+  mutations: {},
+  actions: {},
+  modules: {},
 };
 
 export default new Vuex.Store(store);

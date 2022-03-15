@@ -61,7 +61,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.html',
+      template: path.resolve(__dirname, '../public/index.html'),
       inject: 'body'
     }),
     new VueLoaderPlugin(),
