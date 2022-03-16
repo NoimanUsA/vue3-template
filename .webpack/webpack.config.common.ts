@@ -10,6 +10,7 @@ import tsRules from './modules/typescript';
 import jsRules from './modules/javascript';
 import assetsRules from './modules/assets';
 import { MergedConfigs as Configuration } from './types';
+import { DefinePlugin } from 'webpack';
 
 
 export default {
@@ -59,6 +60,10 @@ export default {
     ]
   },
   plugins: [
+    new DefinePlugin({
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, '../public/index.html'),
