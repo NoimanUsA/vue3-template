@@ -29,9 +29,15 @@ export default {
       '@': path.resolve(__dirname, '../src')
     }
   },
+  performance: {
+    hints: 'error',
+    maxAssetSize: 10_572_864,
+    maxEntrypointSize: 10_572_864
+  },
   optimization: {
     chunkIds: 'named',
     splitChunks: {
+      maxSize: 250 * 1024,
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
