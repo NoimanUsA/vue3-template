@@ -9,7 +9,8 @@
     "**/*.js",
     "**/*.ts",
     "**/*.html",
-    "**/*.json"
+    "**/*.json",
+    "./src/assets/**"
   ],
   "rules": {
     "plugin/rational-order": [
