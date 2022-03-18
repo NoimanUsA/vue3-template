@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:vue/recommended",
+    "prettier"
+  ],
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "amd": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [
+      ".vue"
+    ]
+  },
+  "ignorePatterns": "node_modules",
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "import/extensions": [
+      "error",
+      {
+        "js": "never",
+        "ts": "never",
+        "vue": "always",
+        "tsx": "never",
+        "jsx": "never"
+      }
+    ]
+  }
+}
