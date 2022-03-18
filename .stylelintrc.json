@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order",
+    "stylelint-config-recommended-vue/scss",
+    "stylelint-config-prettier"
+  ],
+  "ignoreFiles": [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.html",
+    "**/*.json"
+  ],
+  "rules": {
+    "rules": {
+      "plugin/rational-order": [
+        true,
+        {
+          "empty-line-between-groups": true
+        }
+      ],
+      "declaration-empty-line-before": null,
+      "rule-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "inside-block"
+          ]
+        }
+      ],
+      "selector-class-pattern": null
+    }
+  }
+}
