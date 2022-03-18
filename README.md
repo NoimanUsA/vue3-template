@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Init App
-=======
 ## Установка
 ```
 // Копирование репозитория
@@ -37,4 +34,3 @@ npx eslint ./src --fix
 4. CSS-preprocessor: SCSS.
 5. CSS-postprocessor: PostCSS.
 6. Bundler: Webpack 5.
->>>>>>> main
