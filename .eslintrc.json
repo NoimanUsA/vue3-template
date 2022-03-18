@@ -41,6 +41,11 @@
         "tsx": "never",
         "jsx": "never"
       }
-    ]
+    ],
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.ts"
+      }
+    }
   }
 }
