@@ -12,23 +12,6 @@
     "**/*.json"
   ],
   "rules": {
-<<<<<<< HEAD
-    "plugin/rational-order": [
-      true,
-      {
-        "empty-line-between-groups": true
-      }
-    ],
-    "declaration-empty-line-before": null,
-    "rule-empty-line-before": [
-      "always",
-      {
-        "ignore": [
-          "inside-block"
-        ]
-      }
-    ]
-=======
     "rules": {
       "plugin/rational-order": [
         true,
@@ -47,6 +30,5 @@
       ],
       "selector-class-pattern": null
     }
->>>>>>> fixes
   }
 }
