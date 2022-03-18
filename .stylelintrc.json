@@ -8,9 +8,11 @@
   "ignoreFiles": [
     "**/*.js",
     "**/*.ts",
-    "**/*.html"
+    "**/*.html",
+    "**/*.json"
   ],
   "rules": {
+<<<<<<< HEAD
     "plugin/rational-order": [
       true,
       {
@@ -18,7 +20,7 @@
       }
     ],
     "declaration-empty-line-before": null,
-     "rule-empty-line-before": [
+    "rule-empty-line-before": [
       "always",
       {
         "ignore": [
@@ -26,5 +28,25 @@
         ]
       }
     ]
+=======
+    "rules": {
+      "plugin/rational-order": [
+        true,
+        {
+          "empty-line-between-groups": true
+        }
+      ],
+      "declaration-empty-line-before": null,
+      "rule-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "inside-block"
+          ]
+        }
+      ],
+      "selector-class-pattern": null
+    }
+>>>>>>> fixes
   }
 }

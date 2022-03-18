@@ -1,11 +1,14 @@
 import { createStore } from "vuex";
+import test from "./modules/test";
 
 const store = {
   state: {},
   getters: {},
   mutations: {},
   actions: {},
-  modules: {},
+  modules: {
+    test,
+  },
 };
 
 export default createStore(store);
