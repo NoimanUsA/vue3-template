@@ -1,7 +1,7 @@
 ## Установка
 ```
 // Копирование репозитория
-git clone http://gitlab.nordclan/frontendspb/webpack/vue-2-app.git
+git clone https://github.com/NoimanUsA/vue3-template.git
 
 // Установка зависимостей
 npm install
